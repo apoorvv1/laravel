@@ -42,9 +42,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
             <ul class="nav navbar-nav">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                 <li class="hidden">
                     <a href="#page-top"></a>
@@ -80,8 +78,12 @@
     </div>
     <!-- /.container -->
 </nav>
-    <div id="app">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
         @yield('content')
+</div>
+        </div>
     </div>
 
     <!-- Scripts -->
