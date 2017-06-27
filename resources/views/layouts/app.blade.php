@@ -34,7 +34,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
+            <a class="navbar-brand page-scroll" href="http://13.78.180.95/">
                 <i class="fa fa-play-circle"></i> <span class="light">RSP</span> Innovations
             </a>
         </div>
@@ -49,9 +49,21 @@
                 </li>
 
                     @if (Auth::guest())
-                        <li><a href="{{ route('login') }}">Login</a></li>
-                        <li><a href="{{ route('register') }}">Register</a></li>
-                    @else
+                        <liclass="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        Member Area<span class="caret"></span>
+                    </a>
+                            <ul class="dropdown-menu" role="menu">
+
+                                <li><a href="{{ route('login') }}">Login</a></li>
+                                <li><a href="{{ route('register') }}">Register</a></li>
+
+
+                            </ul>
+
+
+                        </li>
+                         @else
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
