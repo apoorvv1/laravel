@@ -12,15 +12,12 @@
 
     <!-- Bootstrap Core CSS -->
 	
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    {!! HTML::style('theme/vendor/bootstrap/css/bootstrap.min.css')!!}
+	{!! HTML::style('theme/vendor/font-awesome/css/font-awesome.min.css')!!}
+	{!! HTML::style('https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic')!!}
+	{!! HTML::style('https://fonts.googleapis.com/css?family=Montserrat:400,700')!!}
+	{!! HTML::style('theme/css/grayscale.min.css')!!}
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,5 +46,19 @@
                 </div>
  </div>
         </div>
+		{!! HTML::script('theme/vendor/jquery/jquery.js')!!}
+ 
+    <!-- Bootstrap Core JavaScript -->
+	{!! HTML::script('theme/vendor/bootstrap/js/bootstrap.min.js')!!}
+  
+    <!-- Plugin JavaScript -->
+	{!! HTML::script('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js')!!}
+ 
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+
+{!! HTML::script('https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false')!!}
+    <!-- Theme JavaScript -->
+	{!! HTML::script('theme/js/grayscale.min.js')!!}
+
     </body>
 </html>
