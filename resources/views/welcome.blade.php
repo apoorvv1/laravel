@@ -10,15 +10,15 @@
 
     <title>RSPInnovations LLP</title>
 
-    <link href="{{ asset("/vendor/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+    <link href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{ asset("/vendor/font-awesome/css/font-awesome.min.css)}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/vendor/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="{{ asset("/css/grayscale.min.css")}}" rel="stylesheet">
+    <link href="{{ asset('/css/grayscale.min.css')}}" rel="stylesheet">
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -141,10 +141,10 @@
 
 <!-- jQuery -->
 
-<script src="{{ asset ("/vendor/jquery/jquery.js") }}"></script>
+<script src="{{ asset ('/vendor/jquery/jquery.js') }}"></script>
 
 
-<script src="{{ asset ("/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{ asset ('/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
 
 <!-- Plugin JavaScript -->
 <script src= 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
@@ -153,7 +153,7 @@
 
         <script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 <!-- Theme JavaScript -->
-<script src="{{ asset ("/js/grayscale.min.js')}}"></script>
+<script src="{{ asset ('/js/grayscale.min.js')}}"></script>
 
 </body>
 </html>
