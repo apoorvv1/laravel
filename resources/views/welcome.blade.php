@@ -135,7 +135,7 @@
 <!-- Footer -->
 <footer>
     <div class="container text-center">
-        <p>Copyright &copy; RSPInnov LLP</p>
+        <p>Copyright &copy; <a href="http://rspinnovations.com/">RSPInnov LLP</a>
     </div>
 </footer>
 
