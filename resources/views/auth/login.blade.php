@@ -1,7 +1,8 @@
-@extends('layouts.adminlayout')
+@extends('layouts.app')
 
 @section('content')
-    <div class="flex-center position-ref full-height">  <div class="content">
+    <div class="flex-center position-ref full-height">
+        <div class="content">
             <div class="panel panel-default">
                 <div class="panel-heading">Login</div>
                 <div class="panel-body">
@@ -60,6 +61,7 @@
                     </form>
                 </div>
             </div>
+        </div>
         </div>
 
 <div id="map"></div>
