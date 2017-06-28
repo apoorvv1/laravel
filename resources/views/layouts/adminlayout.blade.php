@@ -67,7 +67,7 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                         @else
-                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image"> <span class="hidden-xs"> {{ Auth::user()->name }}</span>
+                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"> <span class="hidden-xs"> {{ Auth::user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu">
 
@@ -114,7 +114,7 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="active treeview">
-                <a href="sadmin_db.php">
+                <a href="{{ route('dashboard') }}">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -122,9 +122,9 @@
                 </a>
             <li class="header"></li>
 
-            <li><a href="contactmessage.php"><i class="fa fa-circle-o text-red"></i> <span>Contact Message</span></a></li>
-            <li><a href="msg_view.php"><i class="fa fa-circle-o text-red"></i> <span>Show User Messages</span></a></li>
-            <li><a href="msg_post.php"><i class="fa fa-circle-o text-red"></i> <span>Send Messages</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Task</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Comming</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Comming</span></a></li>
             <!-- <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>-->
         </ul>
