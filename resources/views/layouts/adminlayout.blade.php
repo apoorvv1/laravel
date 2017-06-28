@@ -75,23 +75,18 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
                         {{ Auth::user()->name }}
-                    </a>
-                    <ul class="dropdown-menu">
-                        <!-- User image -->
-                        <li>
-                        <!-- Menu Body -->
-                        <a href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
+                    </a> <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                            Logout
-                        </a>
+                        Logout
+                    </a>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form></li>
-                        <!-- Menu Footer-->
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                    Menu Footer-->
                          @endif
-                    </ul>
+                   
                 </li>
                 <!-- Control Sidebar Toggle Button -->
 
