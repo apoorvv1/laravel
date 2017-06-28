@@ -67,26 +67,13 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                         @else
-                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"> <span class="hidden-xs"> <a href="{{ route('logout') }}"
+                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">&nbsp; <span class="hidden-xs"> <a href="{{ route('logout') }}"
                                                                                                                                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                     document.getElementById('logout-form').submit();" class="btn btn-info btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form> </span>
                     </a>
-                    <ul class="dropdown-menu">
 
-                        <li class="user-footer">
-
-                            <div class="pull-right">
-                                <a href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
-                                </form>
-
-                            </div>
-                        </li>
-                    </ul>
                 </li>
 
                 @endif
@@ -105,10 +92,10 @@
         <div class="user-panel">
             <div class="pull-left image">
                 <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
-                {{ Auth::user()->name }} </div>
+                 </div>
             <div class="pull-left info">
                 <p></p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <a href="#"><i class="fa fa-circle text-success"></i> {{ Auth::user()->name }}</a>
             </div>
         </div>
         <!-- search form -->
