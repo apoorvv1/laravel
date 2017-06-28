@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app1()->getLocale() }}">
+<html lang="{{ adminlayout()->getLocale() }}">
 <head>
 
     <meta charset="utf-8">
