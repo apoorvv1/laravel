@@ -139,7 +139,8 @@
 <!-- About Section -->
 
 <!-- Map Section -->
-<div id="map"></div>
+<div style="-webkit-filter: grayscale(100%);pointer-events:none"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.909202067609!2d77.57431731444292!3d12.977658990851852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1611d58e5283%3A0xfb0e68f4978e73e1!2sRSP+Innovations!5e0!3m2!1sen!2sin!4v1498676835198" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
 
 <!-- Footer -->
 <footer>
