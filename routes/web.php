@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
+Route::post('/login', function () {
     return view('dashboard');
 });
 Auth::routes();
