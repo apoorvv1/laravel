@@ -67,7 +67,7 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                         @else
-                            <span class="hidden-xs"> {{ Auth::user()->name }}</span>
+                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image"> <span class="hidden-xs"> {{ Auth::user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu">
 
@@ -137,38 +137,20 @@
 <div class="content-wrapper">
     <section class="content-header">
         <h1>
-            User Messages
+            Admin Dashboard
 
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="{{ route('dashboard') }}"><i class="fa fa-dashboard"></i> Home</a></li>
 
         </ol>
     </section>
 
     <!-- Main content -->
-    <section class="content">
-        <div class="row">
-            <div class="col-xs-12">
 
-
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title">User Messages List</h3>
-                    </div>
-                    <!-- /.box-header -->
-                    <div class="box-body">
 @yield('content')
 
-                    </div>
-                    <!-- /.box-body -->
-                </div>
-                <!-- /.box -->
-            </div>
-            <!-- /.col -->
-        </div>
-        <!-- /.row -->
-    </section>
+
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
