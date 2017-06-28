@@ -50,10 +50,10 @@
                     </li>
                 @else
                     <li>
-                        <a class="page-scroll" href="{{ url('/login') }}">Home</a>
+                        <a class="page-scroll" href="http://13.78.180.95">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://13.78.180.95">Login</a>
+                        <a class="page-scroll" href="{{ url('/login') }}">Login</a>
                     </li>
 
                 @endif
