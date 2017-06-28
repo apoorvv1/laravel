@@ -65,11 +65,11 @@
 <header class="intro">
     <div class="intro-body">
         <div class="container">
-            <div class="row" align="center">
+            <div class="row" >
                 <div class="col-md-6">
 
-                  <h2>Login</h2>
-                    <div class="panel-body">
+                  <h2 align="center">Login</h2>
+                    <div class="panel-body" align="center">
                         <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                             {{ csrf_field() }}
 
