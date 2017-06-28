@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <title>{{ config('app.name', 'RSP Innovations') }}</title>
 
-    <link rel="stylesheet" href="{{ asset('admin/bootstrap/css/bootstrap.min.css')}}">
+
     <link rel="stylesheet" href="{{ asset('admin/bootstrap/css/bootstrap.min.css')}}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -47,7 +47,7 @@
 
 <header class="main-header">
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="http://13.78.180.95" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>R</b>SP</span>
         <!-- logo for regular state and mobile devices -->
@@ -62,54 +62,33 @@
 
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <!-- Messages: style can be found in dropdown.less-->
-
-                <!-- Notifications: style can be found in dropdown.less -->
-
-                <!-- Tasks: style can be found in dropdown.less -->
-                <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
-                        <span class="hidden-xs">Apoorv verma</span>
+                        @if (Auth::guest())
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                        @else
+                            <span class="hidden-xs"> {{ Auth::user()->name }}</span>
                     </a>
                     <ul class="dropdown-menu">
-                        <!-- User image -->
-                        <li class="user-header">
-                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
-                            <p>
-                                Apoorv verma - Web Developer
-
-                            </p>
-                        </li>
-                        <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="row">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Followers</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Sales</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Friends</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-                        </li>
-                        <!-- Menu Footer-->
                         <li class="user-footer">
-                            <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat"></a>
-                            </div>
+
                             <div class="pull-right">
-                                <a href="signout.php" class="btn btn-default btn-flat">Sign out</a>
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+
                             </div>
                         </li>
                     </ul>
                 </li>
-                <!-- Control Sidebar Toggle Button -->
+
+                @endif
+
+
+                        <!-- Control Sidebar Toggle Button -->
 
             </ul>
         </div>
@@ -121,7 +100,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="dist/img/user2-160x160.png" class="img-circle" alt="User Image">
+                <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p></p>
@@ -205,20 +184,20 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="{{ asset('admin/plugins/jQuery/jquery-2.2.3.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ asset('admin/bootstrap/js/bootstrap.min.js')}}"></script>
 <!-- DataTables -->
-<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../../plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="{{ asset('admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{ asset('admin/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
 <!-- SlimScroll -->
-<script src="../../plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="{{ asset('admin/plugins/slimScroll/jquery.slimscroll.min.js')}}"></script>
 <!-- FastClick -->
-<script src="../../plugins/fastclick/fastclick.js"></script>
+<script src="{{ asset('admin/plugins/fastclick/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/app.min.js"></script>
+<script src="{{ asset('admin/dist/js/app.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
+<script src="{{ asset('admin/dist/js/demo.js')}}"></script>
 <!-- page script -->
 <script>
     $(function () {
