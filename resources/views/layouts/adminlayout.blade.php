@@ -67,9 +67,9 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                         @else
-                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">&nbsp; <span class="hidden-xs"> <a href="{{ route('logout') }}"
+                             <span class="hidden-xs"> <a href="{{ route('logout') }}"
                                                                                                                                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="btn btn-info btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form> </span>
                     </a>
