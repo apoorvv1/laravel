@@ -65,7 +65,7 @@
 <header class="intro">
     <div class="intro-body">
         <div class="container">
-            <div class="row">
+            <div class="row" align="center">
                 <div class="col-md-6">
 
                   <h2>Login</h2>
