@@ -67,7 +67,11 @@
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Login</a></li>
                         @else
-                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"> <span class="hidden-xs"> {{ Auth::user()->name }}</span>
+                            <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"> <span class="hidden-xs"> <a href="{{ route('logout') }}"
+                                                                                                                                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form> </span>
                     </a>
                     <ul class="dropdown-menu">
 
@@ -101,7 +105,7 @@
         <div class="user-panel">
             <div class="pull-left image">
                 <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
-            </div>
+                {{ Auth::user()->name }} </div>
             <div class="pull-left info">
                 <p></p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
