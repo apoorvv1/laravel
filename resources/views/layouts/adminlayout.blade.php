@@ -84,9 +84,9 @@
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
                     </form>
-                    Menu Footer-->
+
                          @endif
-                   
+
                 </li>
                 <!-- Control Sidebar Toggle Button -->
 
