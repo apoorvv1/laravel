@@ -1,4 +1,4 @@
-@extends('layouts.app1')
+@extends('layouts.adminlayout')
 
 @section('content')
     <div class="flex-center position-ref full-height">  <div class="content">
