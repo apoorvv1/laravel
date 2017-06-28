@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                   
+
                     <p class="intro-text">Welcome to our World of Innovation.
                         <br>RSPInnov LLP is one of the pioneering software and Web application development organizations aimed at creating applications that match both technology and creativity with a touch of imagination to create the unimaginable range of products benefiting society and serving everyone in all walks of life in turn a fast transition from present to future.</p>
                     <a href="#about" class="btn btn-circle page-scroll">

@@ -89,15 +89,9 @@
     </div>
     <!-- /.container -->
 </nav>
-<header class="intro">
-    <div class="intro-body">
-        <div class="container">
-            <div class="row">
+
         @yield('content')
-            </div>
-        </div>
-    </div>
-</header>
+
 
 
     <!-- Scripts -->
