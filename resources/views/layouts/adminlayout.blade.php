@@ -62,32 +62,32 @@
 
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-                <!-- Messages: style can be found in dropdown.less-->
-
-                <!-- Notifications: style can be found in dropdown.less -->
-
-                <!-- Tasks: style can be found in dropdown.less -->
-                <!-- User Account: style can be found in dropdown.less -->
-                @if (Auth::guest())
-                    <li><a href="{{ route('login') }}">Login</a></li>
-                @else
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                        {{ Auth::user()->name }}
-                    </a> <a href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        Logout
+                        @if (Auth::guest())
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                        @else
+                        <span class="hidden-xs"> {{ Auth::user()->name }}</span>
                     </a>
+                    <ul class="dropdown-menu">
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        {{ csrf_field() }}
-                    </form>
+                        <li class="user-footer">
+
+                            <div class="pull-right">
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Logout</a><form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+
+                            </div>
+                        </li>
+                    </ul>
+                </li>
 
                          @endif
 
-                </li>
+                
                 <!-- Control Sidebar Toggle Button -->
 
             </ul>
