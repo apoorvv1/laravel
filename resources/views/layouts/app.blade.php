@@ -49,14 +49,13 @@
                 </li>
 
                     @if (Auth::guest())
-                        <liclass="dropdown">
+                        <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         Member Area<span class="caret"></span>
                     </a>
                             <ul class="dropdown-menu" role="menu">
 
                                 <li><a href="{{ route('login') }}">Login</a></li>
-                                <li><a href="{{ route('register') }}">Register</a></li>
 
 
                             </ul>
@@ -90,13 +89,16 @@
     </div>
     <!-- /.container -->
 </nav>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
         @yield('content')
-</div>
+            </div>
         </div>
     </div>
+</header>
+
 
     <!-- Scripts -->
 
