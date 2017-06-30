@@ -10,19 +10,19 @@
 
                 <div class="box">
                     <div class="box-header">
-                        <h3 class="box-title"></h3>
+                        <h3 class="box-title">CRUD operations with Ajax</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
 
-                        <h2>CRUD operations in Laravel 5.3</h2>
+
                         @if ($message = Session::get('success'))
                             <div class="alert alert-success alert-block">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
                                 <strong>{{ $message }}</strong>
                             </div>
                         @endif
-                        <button type="button" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#addModal">Add</button>
+                        <button type="button" class="btn btn-info btn-md pull-right" data-toggle="modal" data-target="#addModal">Add</button>
                         <table class="table table-bordered">
                             <thead>
                             <tr>
@@ -75,11 +75,11 @@
                                                 <input type="email" class="form-control" id="email" name="email">
                                             </div>
 
-                                            <button type="submit" class="btn btn-default">Submit</button>
+                                            <button type="submit" class="btn btn-sucess">Submit</button>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
 
@@ -100,10 +100,10 @@
                                     <div class="modal-body">
                                         <p><b>First Name : </b><span id="view_fname" class="text-success"></span></p>
                                         <p><b>Last Name : </b><span id="view_lname" class="text-success"></span></p>
-                                        <p><b>Email : </b><span id="view_email" class="text-success">bhaskar.panja@quadone.com</span></p>
+                                        <p><b>Email : </b><span id="view_email" class="text-success"></span></p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
                                     </div>
                                 </div>
 
@@ -137,12 +137,12 @@
                                                 <input type="email" class="form-control" id="edit_email" name="edit_email">
                                             </div>
 
-                                            <button type="submit" class="btn btn-default">Update</button>
+                                            <button type="submit" class="btn btn-info">Update</button>
                                             <input type="hidden" id="edit_id" name="edit_id">
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                     </div>
 
                                 </div>
