@@ -95,7 +95,7 @@
                  </div>
             <div class="pull-left info">
                 <p></p>
-                <a href="#"><i class="fa fa-circle text-success"></i> {{ Auth::user()->name }}</a>
+                <a href="#"><i class="fa fa-circle text-success"></i> {{ Auth::user()->firstname }}</a>
             </div>
         </div>
         <!-- search form -->

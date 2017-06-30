@@ -15,7 +15,7 @@
                     <!-- /.box-header -->
                     <div class="box-body">
 
-HI I am {{ Auth::user()->name }}
+HI I am {{ Auth::user()->firstname }}
                     </div>
                     <!-- /.box-body -->
                 </div>
