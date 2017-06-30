@@ -6,7 +6,7 @@
 @if ($level == 'error')
 # Whoops!
 @else
-# Hello!{{ Auth::user()->name }}
+# Hello!
 @endif
 @endif
 
