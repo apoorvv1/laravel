@@ -18,7 +18,7 @@
                             <a class="btn btn-primary" href="{{ route('user-management.create') }}">Add new user</a>
                         </div>
                     </div>
-                </div>
+
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="row">
@@ -91,6 +91,7 @@
             </div>
             <!-- /.col -->
         </div>
+            </div>
         <!-- /.row -->
     </section>
 @endsection
