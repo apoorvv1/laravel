@@ -22,11 +22,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
-Route::get('/crud', 'CRUDController@index')->name('crud');;
+Route::get('/crud', 'CRUDController@index')->name('crud');
 Route::post('crud', 'CRUDController@add');
 Route::get('crud/view', 'CRUDController@view');
 Route::post('crud/update', 'CRUDController@update');
 Route::post('crud/delete', 'CRUDController@delete');
+Route::get('user-management', 'UserManagementController')->name('user-management');
 
 Route::post('user-management/search', 'UserManagementController@search')->name('user-management.search');
 Route::resource('user-management', 'UserManagementController');
