@@ -13,7 +13,7 @@ class UserManagementController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/user-management';
 
     /**
      * Create a new controller instance.
