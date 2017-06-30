@@ -9,9 +9,7 @@
 
 
                 <div class="box">
-                    <div class="box-header">
                         <h3 class="box-title" align="center"><b>CRUD operations with Ajax</b></h3>
-                    </div>
                     <!-- /.box-header -->
                     <div class="box-body">
 
