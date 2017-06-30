@@ -20,7 +20,7 @@
                                 <strong>{{ $message }}</strong>
                             </div>
                         @endif
-                        <button type="button" class="btn btn-info btn-md pull-right" data-toggle="modal" data-target="#addModal">Add</button>
+                        <button type="button" class="btn btn-primary btn-md pull-right" data-toggle="modal" data-target="#addModal">Add</button>
                         <table class="table table-bordered">
                             <thead>
                             <tr>
@@ -73,7 +73,7 @@
                                                 <input type="email" class="form-control" id="email" name="email">
                                             </div>
 
-                                            <button type="submit" class="btn btn-sucess">Submit</button>
+                                            <button type="submit" class="btn btn-success">Submit</button>
                                         </form>
                                     </div>
                                     <div class="modal-footer">
@@ -135,7 +135,7 @@
                                                 <input type="email" class="form-control" id="edit_email" name="edit_email">
                                             </div>
 
-                                            <button type="submit" class="btn btn-info">Update</button>
+                                            <button type="submit" class="btn btn-success">Update</button>
                                             <input type="hidden" id="edit_id" name="edit_id">
                                         </form>
                                     </div>
