@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
-Route::get('crud', 'CRUDController@index');
+Route::get('/crud', 'CRUDController@index')->name('crud');;
 Route::post('crud', 'CRUDController@add');
 Route::get('crud/view', 'CRUDController@view');
 Route::post('crud/update', 'CRUDController@update');
