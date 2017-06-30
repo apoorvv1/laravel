@@ -114,7 +114,7 @@
             <li class="header"></li>
 
             <li><a href="{{ route('crud') }}"><i class="fa fa-circle-o text-red"></i> <span>Task</span></a></li>
-            <li><a href="{{ route('user-management') }} "><i class="fa fa-circle-o text-red"></i> <span>User Management</span></a></li>
+            <li><a href=""><i class="fa fa-circle-o text-red"></i> <span>User Management</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Comming</span></a></li>
             <!-- <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
             <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>-->
