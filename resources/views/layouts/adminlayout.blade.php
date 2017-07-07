@@ -383,7 +383,7 @@
 <!-- DataTables -->
 <script src="{{ asset('admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
 <script src="{{ asset('admin/plugins/datatables/dataTables.bootstrap.min.js')}}"></script>
-<script src="../../plugins/morris/morris.min.js"></script>
+<script src="{{ asset('admin/plugins/morris/morris.min.js')}}"></script>
 <!-- SlimScroll -->
 <script src="{{ asset('admin/plugins/slimScroll/jquery.slimscroll.min.js')}}"></script>
 <!-- FastClick -->
@@ -393,11 +393,17 @@
 <script src="{{ asset('admin/dist/js/pages/dashboard2.js')}}"></script>
 
 <script src="{{ asset('admin/plugins/fastclick/fastclick.js')}}"></script>
+<script src="{{ asset('admin/dist/js/pages/dashboard.js')}}"></script>
+<script src="{{ asset('admin/plugins/knob/jquery.knob.js')}}"></script>
+<script src="{{ asset('admin/plugins/daterangepicker/daterangepicker.js')}}"></script>
+<script src="{{ asset('admin/plugins/datepicker/bootstrap-datepicker.js')}}"></script>
+<script src="{{ asset('admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('admin/dist/js/app.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('admin/dist/js/demo.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 <!-- page script -->
 <script>
     $(function () {
