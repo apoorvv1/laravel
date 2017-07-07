@@ -260,7 +260,7 @@
                      <ul class="dropdown-menu">
                          <!-- User image -->
                          <li class="user-header">
-                             <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                             <img src="{{ asset('admin/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
                              <p>
                                  Alexander Pierce - Web Developer
@@ -283,8 +283,9 @@
                              <!-- /.row -->
                          </li>
                          <!-- Menu Footer-->
-                         <li class="user-footer">
-                             <div class="pull-left">@if (Auth::guest())
+                         @if (Auth::guest())
+                         <li class="user-footer" align="center">
+                             <div class="pull-left">
                                  <a href="{{ route('login') }}" class="btn btn-default btn-flat">Login</a>
                              </div> @else
                              <div class="pull-right">
@@ -298,9 +299,7 @@
                      </ul>
                  </li>
                  <!-- Control Sidebar Toggle Button -->
-                 <li>
-                     <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-                 </li>
+
              </ul>
 
         </div>
